@@ -1,7 +1,15 @@
 <html>
+  <head>
+    <script>
+      function pcm() {
+        const _http = new XMLHttpRequest();
+        const url = "https://www.marsmobile.com/.well-known/ad-click-attribution/20/12";
+        _http.open("POST", url);
+        _http.send();
+      }
+    </script>
+  </head>
 <body>
-<a href="https://www.marsmobile.com/.well-known/ad-click-attribution/20/12">
-Attribution
-</a>
+  <button onclick="pcm()">Attribution</button>
 </body>
 </html>
